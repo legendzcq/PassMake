@@ -1,0 +1,452 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3823ACF217C2323A007F6D92 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 3823ACF117C2323A007F6D92 /* Default.png */; };
+		3823ACF417C2337D007F6D92 /* aaa.png in Resources */ = {isa = PBXBuildFile; fileRef = 3823ACF317C2337D007F6D92 /* aaa.png */; };
+		3823ACF817C23B67007F6D92 /* DeleteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3823ACF617C23B67007F6D92 /* DeleteViewController.m */; };
+		3823ACF917C23B67007F6D92 /* DeleteViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3823ACF717C23B67007F6D92 /* DeleteViewController.xib */; };
+		3888F77A17C29ACE006A2B75 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3888F77917C29ACE006A2B75 /* UIKit.framework */; };
+		3888F77C17C29ACE006A2B75 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3888F77B17C29ACE006A2B75 /* Foundation.framework */; };
+		3888F77E17C29ACE006A2B75 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3888F77D17C29ACE006A2B75 /* CoreGraphics.framework */; };
+		3888F78417C29ACE006A2B75 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3888F78217C29ACE006A2B75 /* InfoPlist.strings */; };
+		3888F78617C29ACE006A2B75 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3888F78517C29ACE006A2B75 /* main.m */; };
+		3888F78A17C29ACE006A2B75 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3888F78917C29ACE006A2B75 /* AppDelegate.m */; };
+		3888F78E17C29ACE006A2B75 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3888F78D17C29ACE006A2B75 /* Default@2x.png */; };
+		3888F79017C29ACE006A2B75 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3888F78F17C29ACE006A2B75 /* Default-568h@2x.png */; };
+		3888F79317C29ACE006A2B75 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3888F79217C29ACE006A2B75 /* ViewController.m */; };
+		3888F79617C29ACE006A2B75 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3888F79417C29ACE006A2B75 /* ViewController.xib */; };
+		3888F7AE17C29C1A006A2B75 /* TUBIAO副本.png in Resources */ = {isa = PBXBuildFile; fileRef = 3888F7AD17C29C1A006A2B75 /* TUBIAO副本.png */; };
+		3888F7B217C29C4C006A2B75 /* sss.png in Resources */ = {isa = PBXBuildFile; fileRef = 3888F7B017C29C4C006A2B75 /* sss.png */; };
+		3888F7CB17C29EFE006A2B75 /* BackGround.png in Resources */ = {isa = PBXBuildFile; fileRef = 3888F7B317C29EFE006A2B75 /* BackGround.png */; };
+		3888F7CD17C29EFE006A2B75 /* DengLuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3888F7B617C29EFE006A2B75 /* DengLuViewController.m */; };
+		3888F7CE17C29EFE006A2B75 /* DengLuViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3888F7B717C29EFE006A2B75 /* DengLuViewController.xib */; };
+		3888F7D117C29EFE006A2B75 /* IntroductionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3888F7BE17C29EFE006A2B75 /* IntroductionViewController.m */; };
+		3888F7D217C29EFE006A2B75 /* IntroductionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3888F7BF17C29EFE006A2B75 /* IntroductionViewController.xib */; };
+		3888F7D317C29EFE006A2B75 /* line.png in Resources */ = {isa = PBXBuildFile; fileRef = 3888F7C017C29EFE006A2B75 /* line.png */; };
+		3888F7D417C29EFE006A2B75 /* LOGO1.png in Resources */ = {isa = PBXBuildFile; fileRef = 3888F7C117C29EFE006A2B75 /* LOGO1.png */; };
+		3888F7D517C29EFE006A2B75 /* LOGO2.png in Resources */ = {isa = PBXBuildFile; fileRef = 3888F7C217C29EFE006A2B75 /* LOGO2.png */; };
+		3888F7D617C29EFE006A2B75 /* LOGO3.png in Resources */ = {isa = PBXBuildFile; fileRef = 3888F7C317C29EFE006A2B75 /* LOGO3.png */; };
+		3888F7D717C29EFE006A2B75 /* MakePassViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3888F7C517C29EFE006A2B75 /* MakePassViewController.m */; };
+		3888F7D817C29EFE006A2B75 /* MakePassViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3888F7C617C29EFE006A2B75 /* MakePassViewController.xib */; };
+		3888F7D917C29EFE006A2B75 /* ReViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3888F7C817C29EFE006A2B75 /* ReViewController.m */; };
+		3888F7DA17C29EFE006A2B75 /* ReViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3888F7C917C29EFE006A2B75 /* ReViewController.xib */; };
+		3888F7DB17C29EFE006A2B75 /* sss.png in Resources */ = {isa = PBXBuildFile; fileRef = 3888F7CA17C29EFE006A2B75 /* sss.png */; };
+		3888F7E417C2A08F006A2B75 /* MyPass.m in Sources */ = {isa = PBXBuildFile; fileRef = 3888F7DD17C2A08F006A2B75 /* MyPass.m */; };
+		3888F7E617C2A08F006A2B75 /* PassInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 3888F7E117C2A08F006A2B75 /* PassInfo.m */; };
+		3888F7E717C2A08F006A2B75 /* UserInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 3888F7E317C2A08F006A2B75 /* UserInfo.m */; };
+		3888F7EC17C2BBED006A2B75 /* LoginInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 3888F7EB17C2BBED006A2B75 /* LoginInfo.m */; };
+		3888F7F017C2C8F6006A2B75 /* SaveViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3888F7EE17C2C8F6006A2B75 /* SaveViewController.m */; };
+		3888F7F117C2C8F6006A2B75 /* SaveViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3888F7EF17C2C8F6006A2B75 /* SaveViewController.xib */; };
+		388997FA17C2F16D00E74B95 /* PassDao.m in Sources */ = {isa = PBXBuildFile; fileRef = 388997F917C2F16D00E74B95 /* PassDao.m */; };
+		388997FC17C2F28E00E74B95 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 388997FB17C2F28E00E74B95 /* libsqlite3.dylib */; };
+		38EB849E17C20E2D001E70B3 /* PassViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 38EB849C17C20E2D001E70B3 /* PassViewController.m */; };
+		38EB849F17C20E2D001E70B3 /* PassViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 38EB849D17C20E2D001E70B3 /* PassViewController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		3823ACF117C2323A007F6D92 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Default.png; path = ../Default.png; sourceTree = "<group>"; };
+		3823ACF317C2337D007F6D92 /* aaa.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = aaa.png; path = ../aaa.png; sourceTree = "<group>"; };
+		3823ACF517C23B67007F6D92 /* DeleteViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DeleteViewController.h; path = PassMake/DeleteViewController.h; sourceTree = "<group>"; };
+		3823ACF617C23B67007F6D92 /* DeleteViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DeleteViewController.m; path = PassMake/DeleteViewController.m; sourceTree = "<group>"; };
+		3823ACF717C23B67007F6D92 /* DeleteViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = DeleteViewController.xib; path = PassMake/DeleteViewController.xib; sourceTree = "<group>"; };
+		3888F77617C29ACE006A2B75 /* PassMake.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PassMake.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3888F77917C29ACE006A2B75 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		3888F77B17C29ACE006A2B75 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		3888F77D17C29ACE006A2B75 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		3888F78117C29ACE006A2B75 /* PassMake-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PassMake-Info.plist"; sourceTree = "<group>"; };
+		3888F78317C29ACE006A2B75 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		3888F78517C29ACE006A2B75 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		3888F78717C29ACE006A2B75 /* PassMake-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PassMake-Prefix.pch"; sourceTree = "<group>"; };
+		3888F78817C29ACE006A2B75 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		3888F78917C29ACE006A2B75 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		3888F78D17C29ACE006A2B75 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		3888F78F17C29ACE006A2B75 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		3888F79117C29ACE006A2B75 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		3888F79217C29ACE006A2B75 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		3888F79517C29ACE006A2B75 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
+		3888F7AD17C29C1A006A2B75 /* TUBIAO副本.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "TUBIAO副本.png"; sourceTree = "<group>"; };
+		3888F7B017C29C4C006A2B75 /* sss.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = sss.png; path = ../sss.png; sourceTree = "<group>"; };
+		3888F7B317C29EFE006A2B75 /* BackGround.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BackGround.png; sourceTree = "<group>"; };
+		3888F7B517C29EFE006A2B75 /* DengLuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DengLuViewController.h; sourceTree = "<group>"; };
+		3888F7B617C29EFE006A2B75 /* DengLuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DengLuViewController.m; sourceTree = "<group>"; };
+		3888F7B717C29EFE006A2B75 /* DengLuViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DengLuViewController.xib; sourceTree = "<group>"; };
+		3888F7BD17C29EFE006A2B75 /* IntroductionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IntroductionViewController.h; sourceTree = "<group>"; };
+		3888F7BE17C29EFE006A2B75 /* IntroductionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IntroductionViewController.m; sourceTree = "<group>"; };
+		3888F7BF17C29EFE006A2B75 /* IntroductionViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = IntroductionViewController.xib; sourceTree = "<group>"; };
+		3888F7C017C29EFE006A2B75 /* line.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = line.png; sourceTree = "<group>"; };
+		3888F7C117C29EFE006A2B75 /* LOGO1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LOGO1.png; sourceTree = "<group>"; };
+		3888F7C217C29EFE006A2B75 /* LOGO2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LOGO2.png; sourceTree = "<group>"; };
+		3888F7C317C29EFE006A2B75 /* LOGO3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LOGO3.png; sourceTree = "<group>"; };
+		3888F7C417C29EFE006A2B75 /* MakePassViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MakePassViewController.h; sourceTree = "<group>"; };
+		3888F7C517C29EFE006A2B75 /* MakePassViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MakePassViewController.m; sourceTree = "<group>"; };
+		3888F7C617C29EFE006A2B75 /* MakePassViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MakePassViewController.xib; sourceTree = "<group>"; };
+		3888F7C717C29EFE006A2B75 /* ReViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReViewController.h; sourceTree = "<group>"; };
+		3888F7C817C29EFE006A2B75 /* ReViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReViewController.m; sourceTree = "<group>"; };
+		3888F7C917C29EFE006A2B75 /* ReViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ReViewController.xib; sourceTree = "<group>"; };
+		3888F7CA17C29EFE006A2B75 /* sss.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sss.png; sourceTree = "<group>"; };
+		3888F7DC17C2A08F006A2B75 /* MyPass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyPass.h; sourceTree = "<group>"; };
+		3888F7DD17C2A08F006A2B75 /* MyPass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyPass.m; sourceTree = "<group>"; };
+		3888F7E017C2A08F006A2B75 /* PassInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PassInfo.h; sourceTree = "<group>"; };
+		3888F7E117C2A08F006A2B75 /* PassInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PassInfo.m; sourceTree = "<group>"; };
+		3888F7E217C2A08F006A2B75 /* UserInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserInfo.h; sourceTree = "<group>"; };
+		3888F7E317C2A08F006A2B75 /* UserInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserInfo.m; sourceTree = "<group>"; };
+		3888F7EA17C2BBED006A2B75 /* LoginInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginInfo.h; sourceTree = "<group>"; };
+		3888F7EB17C2BBED006A2B75 /* LoginInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginInfo.m; sourceTree = "<group>"; };
+		3888F7ED17C2C8F6006A2B75 /* SaveViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SaveViewController.h; sourceTree = "<group>"; };
+		3888F7EE17C2C8F6006A2B75 /* SaveViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SaveViewController.m; sourceTree = "<group>"; };
+		3888F7EF17C2C8F6006A2B75 /* SaveViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SaveViewController.xib; sourceTree = "<group>"; };
+		388997F817C2F16D00E74B95 /* PassDao.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PassDao.h; sourceTree = "<group>"; };
+		388997F917C2F16D00E74B95 /* PassDao.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PassDao.m; sourceTree = "<group>"; };
+		388997FB17C2F28E00E74B95 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		38EB849B17C20E2D001E70B3 /* PassViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PassViewController.h; path = ../PassViewController.h; sourceTree = "<group>"; };
+		38EB849C17C20E2D001E70B3 /* PassViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PassViewController.m; path = ../PassViewController.m; sourceTree = "<group>"; };
+		38EB849D17C20E2D001E70B3 /* PassViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = PassViewController.xib; path = ../PassViewController.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3888F77317C29ACE006A2B75 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				388997FC17C2F28E00E74B95 /* libsqlite3.dylib in Frameworks */,
+				3888F77A17C29ACE006A2B75 /* UIKit.framework in Frameworks */,
+				3888F77C17C29ACE006A2B75 /* Foundation.framework in Frameworks */,
+				3888F77E17C29ACE006A2B75 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3823ACFA17C243CC007F6D92 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				3888F7C017C29EFE006A2B75 /* line.png */,
+				3888F7B017C29C4C006A2B75 /* sss.png */,
+				3888F7B317C29EFE006A2B75 /* BackGround.png */,
+				3823ACF317C2337D007F6D92 /* aaa.png */,
+				3823ACF117C2323A007F6D92 /* Default.png */,
+				3888F7CA17C29EFE006A2B75 /* sss.png */,
+				3888F7AD17C29C1A006A2B75 /* TUBIAO副本.png */,
+				3888F7C117C29EFE006A2B75 /* LOGO1.png */,
+				3888F7C217C29EFE006A2B75 /* LOGO2.png */,
+				3888F7C317C29EFE006A2B75 /* LOGO3.png */,
+			);
+			name = images;
+			sourceTree = "<group>";
+		};
+		3888F76D17C29ACE006A2B75 = {
+			isa = PBXGroup;
+			children = (
+				388997F817C2F16D00E74B95 /* PassDao.h */,
+				388997F917C2F16D00E74B95 /* PassDao.m */,
+				3823ACF517C23B67007F6D92 /* DeleteViewController.h */,
+				3823ACF617C23B67007F6D92 /* DeleteViewController.m */,
+				3823ACF717C23B67007F6D92 /* DeleteViewController.xib */,
+				3888F77F17C29ACE006A2B75 /* PassMake */,
+				3888F77817C29ACE006A2B75 /* Frameworks */,
+				3888F77717C29ACE006A2B75 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3888F77717C29ACE006A2B75 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3888F77617C29ACE006A2B75 /* PassMake.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3888F77817C29ACE006A2B75 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				388997FB17C2F28E00E74B95 /* libsqlite3.dylib */,
+				3888F77917C29ACE006A2B75 /* UIKit.framework */,
+				3888F77B17C29ACE006A2B75 /* Foundation.framework */,
+				3888F77D17C29ACE006A2B75 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3888F77F17C29ACE006A2B75 /* PassMake */ = {
+			isa = PBXGroup;
+			children = (
+				3823ACFA17C243CC007F6D92 /* images */,
+				38EB849B17C20E2D001E70B3 /* PassViewController.h */,
+				38EB849C17C20E2D001E70B3 /* PassViewController.m */,
+				38EB849D17C20E2D001E70B3 /* PassViewController.xib */,
+				3888F7ED17C2C8F6006A2B75 /* SaveViewController.h */,
+				3888F7EE17C2C8F6006A2B75 /* SaveViewController.m */,
+				3888F7EF17C2C8F6006A2B75 /* SaveViewController.xib */,
+				3888F7EA17C2BBED006A2B75 /* LoginInfo.h */,
+				3888F7EB17C2BBED006A2B75 /* LoginInfo.m */,
+				3888F7DC17C2A08F006A2B75 /* MyPass.h */,
+				3888F7DD17C2A08F006A2B75 /* MyPass.m */,
+				3888F7E017C2A08F006A2B75 /* PassInfo.h */,
+				3888F7E117C2A08F006A2B75 /* PassInfo.m */,
+				3888F7E217C2A08F006A2B75 /* UserInfo.h */,
+				3888F7E317C2A08F006A2B75 /* UserInfo.m */,
+				3888F7B517C29EFE006A2B75 /* DengLuViewController.h */,
+				3888F7B617C29EFE006A2B75 /* DengLuViewController.m */,
+				3888F7B717C29EFE006A2B75 /* DengLuViewController.xib */,
+				3888F7BD17C29EFE006A2B75 /* IntroductionViewController.h */,
+				3888F7BE17C29EFE006A2B75 /* IntroductionViewController.m */,
+				3888F7BF17C29EFE006A2B75 /* IntroductionViewController.xib */,
+				3888F7C417C29EFE006A2B75 /* MakePassViewController.h */,
+				3888F7C517C29EFE006A2B75 /* MakePassViewController.m */,
+				3888F7C617C29EFE006A2B75 /* MakePassViewController.xib */,
+				3888F7C817C29EFE006A2B75 /* ReViewController.m */,
+				3888F7C717C29EFE006A2B75 /* ReViewController.h */,
+				3888F7C917C29EFE006A2B75 /* ReViewController.xib */,
+				3888F78817C29ACE006A2B75 /* AppDelegate.h */,
+				3888F78917C29ACE006A2B75 /* AppDelegate.m */,
+				3888F79117C29ACE006A2B75 /* ViewController.h */,
+				3888F79217C29ACE006A2B75 /* ViewController.m */,
+				3888F79417C29ACE006A2B75 /* ViewController.xib */,
+				3888F78017C29ACE006A2B75 /* Supporting Files */,
+			);
+			path = PassMake;
+			sourceTree = "<group>";
+		};
+		3888F78017C29ACE006A2B75 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3888F78117C29ACE006A2B75 /* PassMake-Info.plist */,
+				3888F78217C29ACE006A2B75 /* InfoPlist.strings */,
+				3888F78517C29ACE006A2B75 /* main.m */,
+				3888F78717C29ACE006A2B75 /* PassMake-Prefix.pch */,
+				3888F78D17C29ACE006A2B75 /* Default@2x.png */,
+				3888F78F17C29ACE006A2B75 /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3888F77517C29ACE006A2B75 /* PassMake */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3888F79917C29ACE006A2B75 /* Build configuration list for PBXNativeTarget "PassMake" */;
+			buildPhases = (
+				3888F77217C29ACE006A2B75 /* Sources */,
+				3888F77317C29ACE006A2B75 /* Frameworks */,
+				3888F77417C29ACE006A2B75 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PassMake;
+			productName = PassMake;
+			productReference = 3888F77617C29ACE006A2B75 /* PassMake.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3888F76E17C29ACE006A2B75 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = "普科";
+			};
+			buildConfigurationList = 3888F77117C29ACE006A2B75 /* Build configuration list for PBXProject "PassMake" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 3888F76D17C29ACE006A2B75;
+			productRefGroup = 3888F77717C29ACE006A2B75 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3888F77517C29ACE006A2B75 /* PassMake */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3888F77417C29ACE006A2B75 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3888F78417C29ACE006A2B75 /* InfoPlist.strings in Resources */,
+				3888F78E17C29ACE006A2B75 /* Default@2x.png in Resources */,
+				3888F79017C29ACE006A2B75 /* Default-568h@2x.png in Resources */,
+				3888F79617C29ACE006A2B75 /* ViewController.xib in Resources */,
+				3888F7AE17C29C1A006A2B75 /* TUBIAO副本.png in Resources */,
+				3888F7B217C29C4C006A2B75 /* sss.png in Resources */,
+				3888F7CB17C29EFE006A2B75 /* BackGround.png in Resources */,
+				3888F7CE17C29EFE006A2B75 /* DengLuViewController.xib in Resources */,
+				3888F7D217C29EFE006A2B75 /* IntroductionViewController.xib in Resources */,
+				3888F7D317C29EFE006A2B75 /* line.png in Resources */,
+				3888F7D417C29EFE006A2B75 /* LOGO1.png in Resources */,
+				3888F7D517C29EFE006A2B75 /* LOGO2.png in Resources */,
+				3888F7D617C29EFE006A2B75 /* LOGO3.png in Resources */,
+				3888F7D817C29EFE006A2B75 /* MakePassViewController.xib in Resources */,
+				3888F7DA17C29EFE006A2B75 /* ReViewController.xib in Resources */,
+				3888F7DB17C29EFE006A2B75 /* sss.png in Resources */,
+				3888F7F117C2C8F6006A2B75 /* SaveViewController.xib in Resources */,
+				38EB849F17C20E2D001E70B3 /* PassViewController.xib in Resources */,
+				3823ACF217C2323A007F6D92 /* Default.png in Resources */,
+				3823ACF417C2337D007F6D92 /* aaa.png in Resources */,
+				3823ACF917C23B67007F6D92 /* DeleteViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3888F77217C29ACE006A2B75 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3888F78617C29ACE006A2B75 /* main.m in Sources */,
+				3888F78A17C29ACE006A2B75 /* AppDelegate.m in Sources */,
+				3888F79317C29ACE006A2B75 /* ViewController.m in Sources */,
+				3888F7CD17C29EFE006A2B75 /* DengLuViewController.m in Sources */,
+				3888F7D117C29EFE006A2B75 /* IntroductionViewController.m in Sources */,
+				3888F7D717C29EFE006A2B75 /* MakePassViewController.m in Sources */,
+				3888F7D917C29EFE006A2B75 /* ReViewController.m in Sources */,
+				3888F7E417C2A08F006A2B75 /* MyPass.m in Sources */,
+				3888F7E617C2A08F006A2B75 /* PassInfo.m in Sources */,
+				3888F7E717C2A08F006A2B75 /* UserInfo.m in Sources */,
+				3888F7EC17C2BBED006A2B75 /* LoginInfo.m in Sources */,
+				3888F7F017C2C8F6006A2B75 /* SaveViewController.m in Sources */,
+				38EB849E17C20E2D001E70B3 /* PassViewController.m in Sources */,
+				3823ACF817C23B67007F6D92 /* DeleteViewController.m in Sources */,
+				388997FA17C2F16D00E74B95 /* PassDao.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		3888F78217C29ACE006A2B75 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3888F78317C29ACE006A2B75 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		3888F79417C29ACE006A2B75 /* ViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3888F79517C29ACE006A2B75 /* en */,
+			);
+			name = ViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3888F79717C29ACE006A2B75 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		3888F79817C29ACE006A2B75 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3888F79A17C29ACE006A2B75 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PassMake/PassMake-Prefix.pch";
+				INFOPLIST_FILE = "PassMake/PassMake-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		3888F79B17C29ACE006A2B75 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PassMake/PassMake-Prefix.pch";
+				INFOPLIST_FILE = "PassMake/PassMake-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3888F77117C29ACE006A2B75 /* Build configuration list for PBXProject "PassMake" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3888F79717C29ACE006A2B75 /* Debug */,
+				3888F79817C29ACE006A2B75 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3888F79917C29ACE006A2B75 /* Build configuration list for PBXNativeTarget "PassMake" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3888F79A17C29ACE006A2B75 /* Debug */,
+				3888F79B17C29ACE006A2B75 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3888F76E17C29ACE006A2B75 /* Project object */;
+}
