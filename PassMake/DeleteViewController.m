@@ -23,7 +23,6 @@
 {
     if ([LoginInfo isCloud]) {
         [[MyPass shared] selectPass:[LoginInfo _id]];
-        [self release];
     }else
     {
         [LoginInfo setIsCloud:NO];
@@ -40,7 +39,7 @@
     {
         BOOL hehe = [[PassDao shared] doDelete:[self.pass _id]];
         if (hehe) {
-            [[[[UIAlertView alloc] initWithTitle:@"" message:@"删除成功" delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil, nil] autorelease] show];
+            [[[UIAlertView alloc] initWithTitle:@"" message:@"删除成功" delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil, nil] show];
         }
 
     }

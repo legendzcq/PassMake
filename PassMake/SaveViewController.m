@@ -29,7 +29,7 @@ NSString *hehe;
 {
     
     if ([self.mima.text isEqualToString:@""] || [self.passname.text isEqualToString:@""]) {
-        [[[[UIAlertView alloc] initWithTitle:@"" message:@"请完善内容" delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil, nil] autorelease] show];
+        [[[UIAlertView alloc] initWithTitle:@"" message:@"请完善内容" delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil, nil] show];
         return;
     }
     
@@ -44,12 +44,11 @@ NSString *hehe;
         info.pass = self.mima.text;
         BOOL hehe = [[PassDao shared] addPass:info];
         if (hehe) {
-            [[[[UIAlertView alloc] initWithTitle:@"" message:@"添加成功" delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil, nil] autorelease] show];
+            [[[UIAlertView alloc] initWithTitle:@"" message:@"添加成功" delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil, nil] show];
         }else
         {
-            [[[[UIAlertView alloc] initWithTitle:@"" message:@"添加失败" delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil, nil] autorelease] show];
+            [[[UIAlertView alloc] initWithTitle:@"" message:@"添加失败" delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil, nil] show];
         }
-        [info release];
         [self backMake:nil];
     }
 }
@@ -57,7 +56,6 @@ NSString *hehe;
 -(void)backMake:(id)sender
 {
     AppDelegate *now = [UIApplication sharedApplication].delegate;
-    [now.window.rootViewController release];
     now.window.rootViewController = (UIViewController *)now.makePassViewController;
 }
 

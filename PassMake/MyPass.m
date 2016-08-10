@@ -59,7 +59,7 @@ NSMutableArray *passs;
     NSString *encoded = [ipP stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
     NSURL *url = [NSURL URLWithString:encoded];
     NSURLRequest *re = [NSURLRequest requestWithURL:url];
-    [[[NSURLConnection alloc]  initWithRequest:re delegate:self]autorelease];
+    [[NSURLConnection alloc]  initWithRequest:re delegate:self];
     NSLog(@"hehe");
 }
 
@@ -121,7 +121,7 @@ NSMutableArray *passs;
      NSLog(@"encoded=%@",encoded);
     NSURL *url = [NSURL URLWithString:encoded];
     NSURLRequest *re = [NSURLRequest requestWithURL:url];
-    [[[NSURLConnection alloc]  initWithRequest:re delegate:self]autorelease];
+    [[NSURLConnection alloc]  initWithRequest:re delegate:self];
     NSLog(@"hehe");
 }
 
@@ -135,7 +135,7 @@ NSMutableArray *passs;
     NSString *encoded = [ipP stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
     NSURL *url = [NSURL URLWithString:encoded];
     NSURLRequest *re = [NSURLRequest requestWithURL:url];
-    [[[NSURLConnection alloc]  initWithRequest:re delegate:self]autorelease];
+    [[NSURLConnection alloc]  initWithRequest:re delegate:self];
     NSLog(@"hehe");
 }
 
@@ -148,7 +148,7 @@ NSMutableArray *passs;
     NSString *encoded = [ipP stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
     NSURL *url = [NSURL URLWithString:encoded];
     NSURLRequest *re = [NSURLRequest requestWithURL:url];
-    [[[NSURLConnection alloc]  initWithRequest:re delegate:self]autorelease];
+    [[NSURLConnection alloc]  initWithRequest:re delegate:self];
     NSLog(@"hehe");
 }
 
@@ -160,7 +160,7 @@ NSMutableArray *passs;
     NSString *encoded = [ipP stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
     NSURL *url = [NSURL URLWithString:encoded];
     NSURLRequest *re = [NSURLRequest requestWithURL:url];
-    [[[NSURLConnection alloc]  initWithRequest:re delegate:self]autorelease];
+    [[NSURLConnection alloc]  initWithRequest:re delegate:self];
     NSLog(@"hehe");
 }
 
@@ -215,7 +215,6 @@ NSMutableArray *passs;
             UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"" message:@"删除密码失败" delegate:[[now window ]rootViewController] cancelButtonTitle:@"OK" otherButtonTitles:nil, nil];
             [alert show];
         }
-        [now.window.rootViewController release];
         [self selectPass:[LoginInfo _id]];
         return;
     }
@@ -227,7 +226,6 @@ NSMutableArray *passs;
             AppDelegate *now = [[UIApplication sharedApplication] delegate];
             UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"" message:@"插入密码成功" delegate:[[now window ]rootViewController] cancelButtonTitle:@"OK" otherButtonTitles:nil, nil];
             [alert show];
-            [now.window.rootViewController release];
             now.window.rootViewController = (UIViewController *)now.makePassViewController;
         }else if ([str isEqualToString:@"-1"]){
             AppDelegate *now = [[UIApplication sharedApplication] delegate];
@@ -258,7 +256,6 @@ NSMutableArray *passs;
     xmlParser.delegate = self;
     //开始解析
     [xmlParser parse];
-    [xmlParser release];
     
 }
 
@@ -311,7 +308,6 @@ NSMutableArray *passs;
     }
     if (h == selectPass && [elementName isEqualToString:@"pass"]) {
         [passs addObject:pass];
-        [pass release];
     }
     
 }

@@ -36,7 +36,7 @@
         [self.pass selectPass:[LoginInfo _id]];
     }else
     {
-        [[[[UIAlertView alloc] initWithTitle:@"" message:@"您还木有登陆" delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil, nil]autorelease]show];
+        [[[UIAlertView alloc] initWithTitle:@"" message:@"您还木有登陆" delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil, nil]show];
     }
 }
 
@@ -44,7 +44,7 @@
 -(void)makePass:(id)sender
 {
     if ([self.length.text isEqualToString:@"" ]|| self.length.text.intValue <= 0 || self.length.text.intValue > 16) {
-        [[[[UIAlertView alloc] initWithTitle:@"" message:@"请输入一个大于0小于16的长度" delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil, nil]autorelease]show];
+        [[[UIAlertView alloc] initWithTitle:@"" message:@"请输入一个大于0小于16的长度" delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil, nil]show];
         return;
     }
     int length = self.length.text.intValue;
@@ -74,7 +74,7 @@
 -(void)saveBenDi:(id)sender
 {
     if ([self.gengrate.text isEqualToString:@""]) {
-        [[[[UIAlertView alloc] initWithTitle:@"" message:@"请先生成密码" delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil, nil]autorelease]show];
+        [[[UIAlertView alloc] initWithTitle:@"" message:@"请先生成密码" delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil, nil]show];
         return;
     }
     [LoginInfo setIsCloud:NO];
@@ -86,7 +86,7 @@
 -(void)saveCloud:(id)sender
 {
     if ([self.gengrate.text isEqualToString:@""]) {
-        [[[[UIAlertView alloc] initWithTitle:@"" message:@"请先生成密码" delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil, nil]autorelease]show];
+        [[[UIAlertView alloc] initWithTitle:@"" message:@"请先生成密码" delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil, nil]show];
         return;
     }
     if ([LoginInfo islogin]) {
@@ -96,7 +96,7 @@
         now.window.rootViewController = (UIViewController *)con;
         
     }else{
-        [[[[UIAlertView alloc] initWithTitle:@"" message:@"您还木有登陆" delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil, nil]autorelease]show];
+        [[[UIAlertView alloc] initWithTitle:@"" message:@"您还木有登陆" delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil, nil]show];
     }
 }
 
@@ -117,11 +117,7 @@
     now.window.rootViewController = (UIViewController *)now.dengLuViewController;
 }
 
-- (void)dealloc
-{
-    
-    [super dealloc];
-}
+
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {

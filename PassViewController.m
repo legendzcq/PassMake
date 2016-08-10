@@ -30,7 +30,6 @@
 -(void)backH:(id)sender
 {
     AppDelegate *now = [UIApplication sharedApplication].delegate;
-    [self release];
     now.window.rootViewController = (UIViewController *)now.makePassViewController;
 }
 
@@ -70,7 +69,7 @@
     static NSString *CellIdentifier = @"Cell";
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     if (cell == nil) {
-        cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier] autorelease];
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
     }
     PassInfo *info = [self.arr objectAtIndex:indexPath.row];
     cell.textLabel.text = info.title;
@@ -84,7 +83,6 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     AppDelegate *now = [UIApplication sharedApplication].delegate;
-    [self release];
     now.window.rootViewController = [[DeleteViewController alloc] initWithNibName:@"DeleteViewController" bundle:nil andInfo:[self.arr objectAtIndex:indexPath.row]];
 }
 

@@ -33,21 +33,18 @@
     if ([self.name.text isEqualToString:@""] || [self.pass.text isEqualToString:@""] || [self.confrim.text isEqualToString:@""]) {
         UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"!!!" message:@"信息不完整" delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil, nil];
         [alert show];
-        [alert release];
         return;
     }
     
     if (self.name.text.length <6 ||self.pass.text.length < 6) {
         UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"!!!" message:@"用户名或密码少于6位" delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil, nil];
         [alert show];
-        [alert release];
         return;
     }
     
     if (![self.pass.text isEqualToString:self.confrim.text]) {
         UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"!!!" message:@"两次输入的密码不同" delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil, nil];
         [alert show];
-        [alert release];
     }else{
         NSLog(@"%@",[self.sex titleForSegmentAtIndex:[self.sex selectedSegmentIndex]]);
         [self.mpass insertUser:self.name.text andPass:self.pass.text andSex:([self.sex selectedSegmentIndex] ==1 ? @"女":@"男")];

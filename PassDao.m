@@ -71,7 +71,6 @@ static PassDao *dao;
                 if(password)
                     info.pass = [NSString stringWithUTF8String:password];
                 [passs addObject:info];
-                [info release];
             }
             
             sqlite3_finalize(statment);
@@ -79,7 +78,7 @@ static PassDao *dao;
             NSLog(@"---------");
         }
     }
-    return [passs retain];
+    return passs;
 }
 
 -(BOOL)doDelete:(int)_id

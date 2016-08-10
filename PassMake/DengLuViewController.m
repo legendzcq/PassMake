@@ -48,7 +48,6 @@
     if (self.userName.text.length < 6 || self.passWord.text.length < 6) {
         UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"!!!" message:@"用户名或密码少于6位" delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil, nil];
         [alert show];
-        [alert release];
         return;
     }
     
