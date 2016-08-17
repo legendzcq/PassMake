@@ -11,9 +11,10 @@
 #import "AppDelegate.h"
 #import "LoginInfo.h"
 #import "PassViewController.h"
-#import "PassDao.h"
-
-@interface DeleteViewController ()
+#import "PassInfo.h"
+#import "CameraSessionView.h"
+#import "LKDBTool.h"
+@interface DeleteViewController ()<CACameraSessionDelegate>
 
 @end
 
@@ -26,8 +27,7 @@
     }else
     {
         [LoginInfo setIsCloud:NO];
-        AppDelegate *now = [UIApplication sharedApplication].delegate;
-        now.window.rootViewController = (UIViewController *)[[PassViewController alloc] initWithNibName:@"PassViewController" bundle:nil andArr:[[PassDao shared] selectAllP]];
+        [self.navigationController popViewControllerAnimated:YES];
     }
 }
 
@@ -37,7 +37,9 @@
         [[MyPass shared] deletePass:self.pass._id];
     }else
     {
-        BOOL hehe = [[PassDao shared] doDelete:[self.pass _id]];
+        LKDBSQLState *sql = [[LKDBSQLState alloc] object:[PassInfo class] type:WHERE key:@"title" opt:@"=" value:self.pass.title];
+        
+       BOOL hehe =  [PassInfo deleteObjectsWithFormat:[sql sqlOptionStr]];
         if (hehe) {
             [[[UIAlertView alloc] initWithTitle:@"" message:@"删除成功" delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil, nil] show];
         }
@@ -48,9 +50,18 @@
 }
 -(IBAction)fuzhi:(id)sender
 {
-    UIPasteboard *pasteboard = [UIPasteboard generalPasteboard];
-    pasteboard.string = self.Password.text;
-    [[[UIAlertView alloc] initWithTitle:@"" message:@"已经将密码复制" delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil, nil]show];
+//    UIPasteboard *pasteboard = [UIPasteboard generalPasteboard];
+//    pasteboard.string = self.Password.text;
+//    [[[UIAlertView alloc] initWithTitle:@"" message:@"已经将密码复制" delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil, nil]show];
+    UIImage * image =   [[UIImage alloc]initWithData:self.pass.imageData];
+        UIImageWriteToSavedPhotosAlbum(image, self, @selector(image:didFinishSavingWithError:contextInfo:), nil);
+}
+- (void)image:(UIImage *)image didFinishSavingWithError:(NSError *)error contextInfo:(void *)contextInfo
+{
+    //Show error alert if image could not be saved
+    if (error) [[[UIAlertView alloc] initWithTitle:@"Error!" message:@"图片导出失败" delegate:self cancelButtonTitle:@"Ok" otherButtonTitles:nil, nil] show];
+    else
+     [[[UIAlertView alloc] initWithTitle:@"Yes!" message:@"图片导出成功" delegate:self cancelButtonTitle:@"Ok" otherButtonTitles:nil, nil] show];
 }
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
@@ -79,6 +90,7 @@
     NSLog(@"viewDidLoad");
     self.passwordName.text = self.pass.title;
     self.Password.text = self.pass.pass;
+    self.imageCore.image =[[UIImage alloc]initWithData:self.pass.imageData];
 }
 
 - (void)didReceiveMemoryWarning

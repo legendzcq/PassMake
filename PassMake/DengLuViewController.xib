@@ -22,10 +22,7 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="BackGround.png" translatesAutoresizingMaskIntoConstraints="NO" id="78">
-                    <rect key="frame" x="0.0" y="0.0" width="320" height="466"/>
-                    <constraints>
-                        <constraint firstAttribute="height" constant="466" id="87"/>
-                    </constraints>
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="960"/>
                 </imageView>
                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Name:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="89">
                     <rect key="frame" x="33" y="163" width="57" height="21"/>
@@ -71,7 +68,7 @@
                         <constraint firstAttribute="width" constant="261" id="97"/>
                     </constraints>
                     <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                    <state key="normal" title="UserLogin">
+                    <state key="normal" title="输入账户密码">
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
                     <connections>
@@ -84,7 +81,7 @@
                         <constraint firstAttribute="height" constant="28" id="197"/>
                     </constraints>
                     <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                    <state key="normal" title="VisitorLogin">
+                    <state key="normal" title="游客登录">
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
                     <connections>
@@ -98,13 +95,7 @@
                         <constraint firstAttribute="height" constant="130" id="171"/>
                     </constraints>
                 </imageView>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" misplaced="YES" image="line.png" translatesAutoresizingMaskIntoConstraints="NO" id="218">
-                    <rect key="frame" x="141" y="445" width="96" height="21"/>
-                    <constraints>
-                        <constraint firstAttribute="height" constant="21" id="353"/>
-                    </constraints>
-                </imageView>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="341">
+                <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="341">
                     <rect key="frame" x="170" y="433" width="137" height="44"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="137" id="350"/>
@@ -120,7 +111,7 @@
                         <action selector="zhuce:" destination="-1" eventType="touchUpInside" id="368"/>
                     </connections>
                 </button>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="354">
+                <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="354">
                     <rect key="frame" x="17" y="433" width="111" height="44"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="111" id="361"/>
@@ -138,6 +129,12 @@
                         <action selector="help:" destination="-1" eventType="touchUpInside" id="369"/>
                     </connections>
                 </button>
+                <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" image="line.png" translatesAutoresizingMaskIntoConstraints="NO" id="218">
+                    <rect key="frame" x="141" y="445" width="2" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="353"/>
+                    </constraints>
+                </imageView>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
@@ -151,7 +148,6 @@
                 <constraint firstItem="127" firstAttribute="leading" secondItem="1" secondAttribute="leading" constant="93" id="167"/>
                 <constraint firstItem="78" firstAttribute="trailing" secondItem="1" secondAttribute="trailing" id="172"/>
                 <constraint firstItem="78" firstAttribute="leading" secondItem="1" secondAttribute="leading" id="173"/>
-                <constraint firstItem="78" firstAttribute="top" secondItem="1" secondAttribute="top" id="175"/>
                 <constraint firstAttribute="bottom" secondItem="195" secondAttribute="bottom" constant="143" id="200"/>
                 <constraint firstItem="195" firstAttribute="leading" secondItem="93" secondAttribute="leading" id="201"/>
                 <constraint firstItem="195" firstAttribute="trailing" secondItem="93" secondAttribute="trailing" id="202"/>
@@ -167,13 +163,16 @@
                 <constraint firstItem="354" firstAttribute="bottom" secondItem="341" secondAttribute="bottom" id="363"/>
                 <constraint firstAttribute="bottom" secondItem="354" secondAttribute="bottom" constant="3" id="364"/>
                 <constraint firstItem="354" firstAttribute="centerY" secondItem="218" secondAttribute="centerY" id="365"/>
+                <constraint firstAttribute="trailing" secondItem="78" secondAttribute="trailing" id="0HS-Kw-5hR"/>
+                <constraint firstItem="78" firstAttribute="leading" secondItem="1" secondAttribute="leading" id="1jz-WJ-28G"/>
+                <constraint firstItem="78" firstAttribute="top" secondItem="1" secondAttribute="top" id="iFl-6L-n3Z"/>
             </constraints>
             <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
         </view>
     </objects>
     <resources>
         <image name="BackGround.png" width="640" height="960"/>
-        <image name="LOGO1.png" width="240" height="226"/>
+        <image name="LOGO1.png" width="240" height="240"/>
         <image name="line.png" width="2" height="30"/>
     </resources>
 </document>

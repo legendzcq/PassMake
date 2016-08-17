@@ -7,7 +7,6 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SaveViewController">
             <connections>
-                <outlet property="back" destination="4" id="57"/>
                 <outlet property="mima" destination="34" id="58"/>
                 <outlet property="passname" destination="25" id="59"/>
                 <outlet property="save" destination="43" id="60"/>
@@ -22,27 +21,6 @@
                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="BackGround.png" translatesAutoresizingMaskIntoConstraints="NO" id="50">
                     <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                 </imageView>
-                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.5" contentMode="left" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="72">
-                    <rect key="frame" x="0.0" y="0.0" width="320" height="34"/>
-                    <color key="backgroundColor" red="0.48146261979999999" green="0.68302088029999997" blue="0.89795918370000005" alpha="1" colorSpace="calibratedRGB"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                    <nil key="highlightedColor"/>
-                </label>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4">
-                    <rect key="frame" x="0.0" y="0.0" width="52" height="34"/>
-                    <constraints>
-                        <constraint firstAttribute="width" constant="52" id="82"/>
-                        <constraint firstAttribute="height" constant="34" id="83"/>
-                    </constraints>
-                    <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
-                    <state key="normal" title="Back">
-                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                    </state>
-                    <connections>
-                        <action selector="backMake:" destination="-1" eventType="touchUpInside" id="61"/>
-                    </connections>
-                </button>
                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="PassName:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8">
                     <rect key="frame" x="20" y="83" width="106" height="43"/>
                     <constraints>
@@ -83,15 +61,6 @@
                         <action selector="saveB:" destination="-1" eventType="touchUpInside" id="63"/>
                     </connections>
                 </button>
-                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Save" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="85">
-                    <rect key="frame" x="128" y="3" width="54" height="27"/>
-                    <constraints>
-                        <constraint firstAttribute="width" constant="54" id="92"/>
-                    </constraints>
-                    <fontDescription key="fontDescription" type="system" pointSize="22"/>
-                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                    <nil key="highlightedColor"/>
-                </label>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
@@ -108,15 +77,6 @@
                 <constraint firstItem="50" firstAttribute="bottom" secondItem="1" secondAttribute="bottom" id="56"/>
                 <constraint firstItem="43" firstAttribute="leading" secondItem="1" secondAttribute="leading" constant="62" id="68"/>
                 <constraint firstAttribute="bottom" secondItem="43" secondAttribute="bottom" constant="178" id="70"/>
-                <constraint firstItem="72" firstAttribute="leading" secondItem="1" secondAttribute="leading" id="77"/>
-                <constraint firstItem="72" firstAttribute="trailing" secondItem="1" secondAttribute="trailing" id="78"/>
-                <constraint firstItem="72" firstAttribute="top" secondItem="1" secondAttribute="top" id="79"/>
-                <constraint firstItem="4" firstAttribute="leading" secondItem="1" secondAttribute="leading" id="80"/>
-                <constraint firstItem="4" firstAttribute="top" secondItem="1" secondAttribute="top" id="81"/>
-                <constraint firstItem="72" firstAttribute="bottom" secondItem="4" secondAttribute="bottom" id="84"/>
-                <constraint firstItem="85" firstAttribute="baseline" secondItem="4" secondAttribute="baseline" id="86"/>
-                <constraint firstItem="85" firstAttribute="top" secondItem="1" secondAttribute="top" constant="3" id="95"/>
-                <constraint firstItem="85" firstAttribute="leading" secondItem="1" secondAttribute="leading" constant="128" id="102"/>
             </constraints>
             <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
         </view>

@@ -7,11 +7,11 @@
 //
 
 #import <Foundation/Foundation.h>
-
-@interface PassInfo : NSObject
+#import "LKDBModel.h"
+@interface PassInfo : LKDBModel
 
 @property (nonatomic,assign)int _id;
 @property (nonatomic,copy) NSString *pass;
 @property (nonatomic,copy)NSString *title;
-
+@property (nonatomic,copy)NSData * imageData;
 @end

@@ -16,6 +16,7 @@
 @property (strong,nonatomic)IBOutlet UITextField *mima;//生成显示密码
 @property (strong,nonatomic)IBOutlet UIButton *save;//保存
 @property (strong,nonatomic)MyPass *mpass;
+@property (weak, nonatomic) IBOutlet UIImageView *saveimage;//图片
 
 -(IBAction)backMake:(id)sender;
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil andPass:(NSString *)pass;

@@ -11,23 +11,14 @@
 #import "AppDelegate.h"
 #import "LoginInfo.h"
 #import "PassViewController.h"
-#import "PassDao.h"
-
-@interface MakePassViewController ()
-
+#import "CameraSessionView.h"
+#import "saveImageController.h"
+#import "PassInfo.h"
+@interface MakePassViewController ()<CACameraSessionDelegate>
+@property (nonatomic, strong) CameraSessionView *cameraView;
 @end
 
 @implementation MakePassViewController
-
-//@property (strong,nonatomic)IBOutlet UITextField * length;//密码长度
-//@property (strong,nonatomic)IBOutlet UISwitch *number;//选择数字
-//@property (strong,nonatomic)IBOutlet UISwitch *capital;//使用大写
-//@property (strong,nonatomic)IBOutlet UISwitch *lower;//使用小写
-//@property (strong,nonatomic)IBOutlet UISwitch *special;//使用特殊字符
-//@property (strong,nonatomic)IBOutlet UITextField *gengrate;//生成密码
-//@property (strong,nonatomic)IBOutlet UIButton *cloud;//保存云端
-//@property (strong,nonatomic)IBOutlet UIButton *save;//保存
-//@property (strong,nonatomic)IBOutlet UIButton *look;//进行查看
 
 -(void)findMiMa:(id)sender
 {
@@ -67,8 +58,9 @@
 -(void)bendiM:(id)sender
 {
     [LoginInfo setIsCloud:NO];
-    AppDelegate *now = [UIApplication sharedApplication].delegate;
-    now.window.rootViewController = (UIViewController *)[[PassViewController alloc] initWithNibName:@"PassViewController" bundle:nil andArr:[[PassDao shared] selectAllP]];
+
+       PassViewController * tempcon =  (PassViewController *)[[PassViewController alloc] initWithNibName:@"PassViewController" bundle:nil andArr:(NSMutableArray *)[PassInfo findAll]];
+    [self.navigationController pushViewController:tempcon animated:YES];
 }
 
 -(void)saveBenDi:(id)sender
@@ -79,26 +71,10 @@
     }
     [LoginInfo setIsCloud:NO];
     SaveViewController *con = [[SaveViewController alloc] initWithNibName:@"SaveViewController" bundle:nil andPass:self.gengrate.text];
-    AppDelegate *now = [UIApplication sharedApplication].delegate;
-    now.window.rootViewController = (UIViewController *)con;
+    [self.navigationController pushViewController:con animated:YES];
 }
 
--(void)saveCloud:(id)sender
-{
-    if ([self.gengrate.text isEqualToString:@""]) {
-        [[[UIAlertView alloc] initWithTitle:@"" message:@"请先生成密码" delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil, nil]show];
-        return;
-    }
-    if ([LoginInfo islogin]) {
-        [LoginInfo setIsCloud:YES];
-        SaveViewController *con = [[SaveViewController alloc] initWithNibName:@"SaveViewController" bundle:nil andPass:self.gengrate.text];
-        AppDelegate *now = [UIApplication sharedApplication].delegate;
-        now.window.rootViewController = (UIViewController *)con;
-        
-    }else{
-        [[[UIAlertView alloc] initWithTitle:@"" message:@"您还木有登陆" delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil, nil]show];
-    }
-}
+
 
 - (BOOL)textFieldShouldReturn:(UITextField *)textField
 {
@@ -115,6 +91,7 @@
     [LoginInfo setId:0];
     AppDelegate *now = [UIApplication sharedApplication].delegate;
     now.window.rootViewController = (UIViewController *)now.dengLuViewController;
+    
 }
 
 
@@ -133,12 +110,82 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+    self.navigationItem.title = @"极密宝demo";
+}
+-(void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+        [self.navigationController setNavigationBarHidden:NO];
 }
 
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+#pragma mark - 拍照
+-(void)saveCloud:(id)sender
+{
+    //Set white status bar
+    [self setNeedsStatusBarAppearanceUpdate];
+//    [self.navigationController setNavigationBarHidden:YES];
+    
+    //Instantiate the camera view & assign its frame
+    _cameraView = [[CameraSessionView alloc] initWithFrame:self.view.frame];
+    
+    //Set the camera view's delegate and add it as a subview
+    _cameraView.delegate = self;
+    
+    //Apply animation effect to present the camera view
+//    CATransition *applicationLoadViewIn =[CATransition animation];
+//    [applicationLoadViewIn setDuration:0.6];
+//    [applicationLoadViewIn setType:kCATransitionReveal];
+//    [applicationLoadViewIn setTimingFunction:[CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseIn]];
+//    [[_cameraView layer]addAnimation:applicationLoadViewIn forKey:kCATransitionReveal];
+//    
+//    [self.view addSubview:_cameraView];
+//    
+//    //____________________________Example Customization____________________________
+//        [_cameraView setTopBarColor:[UIColor colorWithRed:0.97 green:0.97 blue:0.97 alpha: 0.64]];
+//        [_cameraView hideFlashButton]; //On iPad flash is not present, hence it wont appear.
+//        [_cameraView hideCameraToggleButton];
+//        [_cameraView hideDismissButton];
+    
+    
+    saveImageController * save = [[saveImageController alloc] init];
+    
+    save.imageData = UIImageJPEGRepresentation([UIImage imageNamed:@"123"], 1.0);
+    [self.navigationController pushViewController:save animated:YES];
+    
+}
+
+-(void)didCaptureImage:(UIImage *)image {
+    NSLog(@"CAPTURED IMAGE");
+//    UIImageWriteToSavedPhotosAlbum(image, self, @selector(image:didFinishSavingWithError:contextInfo:), nil);
+//    [self.cameraView removeFromSuperview];
+}
+
+-(void)didCaptureImageWithData:(NSData *)imageData {
+    NSLog(@"CAPTURED IMAGE DATA");
+    //    UIImage *image = [[UIImage alloc] initWithData:imageData];
+    //    UIImageWriteToSavedPhotosAlbum(image, self, @selector(image:didFinishSavingWithError:contextInfo:), nil);
+        [self.cameraView removeFromSuperview];
+        saveImageController * save = [[saveImageController alloc] init];
+    
+        save.imageData = imageData;
+        [self.navigationController pushViewController:save animated:YES];
+    
+}
+
+- (void)image:(UIImage *)image didFinishSavingWithError:(NSError *)error contextInfo:(void *)contextInfo
+{
+    //Show error alert if image could not be saved
+    if (error) [[[UIAlertView alloc] initWithTitle:@"Error!" message:@"Image couldn't be saved" delegate:self cancelButtonTitle:@"Ok" otherButtonTitles:nil, nil] show];
+}
+
+- (BOOL)prefersStatusBarHidden {
+    return YES;
 }
 
 @end

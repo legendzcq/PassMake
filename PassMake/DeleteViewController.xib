@@ -8,9 +8,9 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DeleteViewController">
             <connections>
                 <outlet property="Password" destination="136" id="147"/>
-                <outlet property="back" destination="152" id="164"/>
                 <outlet property="cop" destination="175" id="186"/>
                 <outlet property="del" destination="19" id="150"/>
+                <outlet property="imageCore" destination="A6S-CR-r85" id="ogd-Kx-mZb"/>
                 <outlet property="passwordName" destination="126" id="146"/>
                 <outlet property="view" destination="1" id="3"/>
             </connections>
@@ -49,30 +49,13 @@
                         <constraint firstAttribute="width" constant="155" id="174"/>
                     </constraints>
                     <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                    <state key="normal" title="Delete">
+                    <state key="normal" title="删除">
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
                     <connections>
                         <action selector="delPass:" destination="-1" eventType="touchUpInside" id="166"/>
                     </connections>
                 </button>
-                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.5" contentMode="left" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="42">
-                    <rect key="frame" x="0.0" y="0.0" width="320" height="34"/>
-                    <color key="backgroundColor" red="0.48146261979999999" green="0.68302088029999997" blue="0.89795918370000005" alpha="1" colorSpace="calibratedRGB"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                    <nil key="highlightedColor"/>
-                </label>
-                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Delete" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="66">
-                    <rect key="frame" x="122" y="6" width="67" height="21"/>
-                    <constraints>
-                        <constraint firstAttribute="width" constant="67" id="72"/>
-                        <constraint firstAttribute="height" constant="21" id="75"/>
-                    </constraints>
-                    <fontDescription key="fontDescription" type="system" pointSize="21"/>
-                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                    <nil key="highlightedColor"/>
-                </label>
                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="126">
                     <rect key="frame" x="139" y="90" width="161" height="28"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -94,20 +77,6 @@
                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="152">
-                    <rect key="frame" x="0.0" y="0.0" width="52" height="34"/>
-                    <constraints>
-                        <constraint firstAttribute="height" constant="34" id="159"/>
-                        <constraint firstAttribute="width" constant="52" id="163"/>
-                    </constraints>
-                    <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                    <state key="normal" title="Back">
-                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                    </state>
-                    <connections>
-                        <action selector="backM:" destination="-1" eventType="touchUpInside" id="167"/>
-                    </connections>
-                </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="175">
                     <rect key="frame" x="9" y="208" width="141" height="31"/>
                     <constraints>
@@ -115,13 +84,16 @@
                         <constraint firstAttribute="height" constant="31" id="183"/>
                     </constraints>
                     <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                    <state key="normal" title="Copy">
+                    <state key="normal" title="导出">
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
                     <connections>
                         <action selector="fuzhi:" destination="-1" eventType="touchUpInside" id="185"/>
                     </connections>
                 </button>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="A6S-CR-r85">
+                    <rect key="frame" x="0.0" y="257" width="320" height="223"/>
+                </imageView>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
@@ -132,25 +104,21 @@
                 <constraint firstItem="13" firstAttribute="top" secondItem="1" secondAttribute="top" constant="97" id="31"/>
                 <constraint firstItem="16" firstAttribute="leading" secondItem="13" secondAttribute="leading" id="35"/>
                 <constraint firstItem="13" firstAttribute="leading" secondItem="1" secondAttribute="leading" constant="4" id="53"/>
-                <constraint firstItem="42" firstAttribute="trailing" secondItem="1" secondAttribute="trailing" id="61"/>
-                <constraint firstItem="42" firstAttribute="top" secondItem="1" secondAttribute="top" id="63"/>
-                <constraint firstItem="42" firstAttribute="leading" secondItem="1" secondAttribute="leading" id="65"/>
                 <constraint firstItem="16" firstAttribute="top" secondItem="1" secondAttribute="top" constant="139" id="123"/>
                 <constraint firstAttribute="trailing" secondItem="126" secondAttribute="trailing" constant="20" symbolic="YES" id="129"/>
                 <constraint firstItem="126" firstAttribute="top" secondItem="1" secondAttribute="top" constant="90" id="131"/>
                 <constraint firstAttribute="trailing" secondItem="136" secondAttribute="trailing" constant="20" symbolic="YES" id="141"/>
                 <constraint firstItem="136" firstAttribute="leading" secondItem="126" secondAttribute="leading" id="142"/>
                 <constraint firstItem="136" firstAttribute="top" secondItem="1" secondAttribute="top" constant="136" id="143"/>
-                <constraint firstItem="152" firstAttribute="bottom" secondItem="42" secondAttribute="bottom" id="157"/>
-                <constraint firstItem="152" firstAttribute="leading" secondItem="1" secondAttribute="leading" id="158"/>
-                <constraint firstItem="66" firstAttribute="top" secondItem="1" secondAttribute="top" constant="6" id="160"/>
-                <constraint firstItem="152" firstAttribute="top" secondItem="1" secondAttribute="top" id="161"/>
                 <constraint firstItem="175" firstAttribute="top" secondItem="19" secondAttribute="top" id="176"/>
                 <constraint firstItem="175" firstAttribute="leading" secondItem="1" secondAttribute="leading" constant="9" id="177"/>
                 <constraint firstItem="175" firstAttribute="top" secondItem="1" secondAttribute="top" constant="208" id="178"/>
                 <constraint firstItem="19" firstAttribute="leading" secondItem="175" secondAttribute="trailing" constant="8" symbolic="YES" id="179"/>
                 <constraint firstItem="175" firstAttribute="bottom" secondItem="19" secondAttribute="bottom" id="181"/>
-                <constraint firstItem="66" firstAttribute="leading" secondItem="1" secondAttribute="leading" constant="122" id="191"/>
+                <constraint firstItem="A6S-CR-r85" firstAttribute="leading" secondItem="1" secondAttribute="leading" id="JWh-tB-hbH"/>
+                <constraint firstAttribute="bottom" secondItem="A6S-CR-r85" secondAttribute="bottom" id="mLQ-sT-tnJ"/>
+                <constraint firstItem="A6S-CR-r85" firstAttribute="top" secondItem="175" secondAttribute="bottom" constant="18" id="vdG-Wn-fKz"/>
+                <constraint firstAttribute="trailing" secondItem="A6S-CR-r85" secondAttribute="trailing" id="yIS-dK-pGf"/>
             </constraints>
             <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
         </view>

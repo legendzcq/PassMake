@@ -16,6 +16,7 @@
 @property (strong,nonatomic)IBOutlet UIButton *back;
 @property (strong,nonatomic)PassInfo *pass;
 @property(strong,nonatomic)IBOutlet UIButton *cop;
+@property (weak, nonatomic) IBOutlet UIImageView *imageCore;
 
 
 -(IBAction)delPass:(id)sender;

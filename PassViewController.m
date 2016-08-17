@@ -36,7 +36,6 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    self.info.text = [NSString stringWithFormat:@"%@的密码本",[LoginInfo name]];
     //; Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
  
@@ -82,8 +81,9 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    AppDelegate *now = [UIApplication sharedApplication].delegate;
-    now.window.rootViewController = [[DeleteViewController alloc] initWithNibName:@"DeleteViewController" bundle:nil andInfo:[self.arr objectAtIndex:indexPath.row]];
+    DeleteViewController *now =[[DeleteViewController alloc] initWithNibName:@"DeleteViewController" bundle:nil andInfo:[self.arr objectAtIndex:indexPath.row]];
+    
+    [self.navigationController pushViewController:now animated:YES];
 }
 
 @end

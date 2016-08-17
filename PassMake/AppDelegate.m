@@ -7,13 +7,10 @@
 //
 
 #import "AppDelegate.h"
-
-#import "ViewController.h"
 #import "DengLuViewController.h"
 #import "MakePassViewController.h"
 #import "ReViewController.h"
-#import "IntroductionViewController.h"
-#import "PassDao.h"
+#import "LKFMDB/LKDBTool.h"
 
 @implementation AppDelegate
 
@@ -24,14 +21,13 @@
     
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
-    self.viewController = [[ViewController alloc] initWithNibName:@"ViewController" bundle:nil] ;
     self.dengLuViewController = [[DengLuViewController alloc] initWithNibName:@"DengLuViewController" bundle:nil] ;
     self.makePassViewController = [[MakePassViewController alloc] initWithNibName:@"MakePassViewController" bundle:nil] ;
     self.reViewController = [[ReViewController alloc] initWithNibName:@"ReViewController" bundle:nil];
-    self.introductionViewController = [[IntroductionViewController alloc] initWithNibName:@"IntroductionViewController" bundle:nil];
-    self.window.rootViewController = self.dengLuViewController;
+    
+    UINavigationController * tempabc = [[UINavigationController alloc]initWithRootViewController:self.makePassViewController];
+    self.window.rootViewController = tempabc;
     [self.window makeKeyAndVisible];
-    [[PassDao shared] create];
     return YES;
 }
 

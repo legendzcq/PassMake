@@ -19,15 +19,11 @@
 		3888F78A17C29ACE006A2B75 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3888F78917C29ACE006A2B75 /* AppDelegate.m */; };
 		3888F78E17C29ACE006A2B75 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3888F78D17C29ACE006A2B75 /* Default@2x.png */; };
 		3888F79017C29ACE006A2B75 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3888F78F17C29ACE006A2B75 /* Default-568h@2x.png */; };
-		3888F79317C29ACE006A2B75 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3888F79217C29ACE006A2B75 /* ViewController.m */; };
-		3888F79617C29ACE006A2B75 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3888F79417C29ACE006A2B75 /* ViewController.xib */; };
 		3888F7AE17C29C1A006A2B75 /* TUBIAO副本.png in Resources */ = {isa = PBXBuildFile; fileRef = 3888F7AD17C29C1A006A2B75 /* TUBIAO副本.png */; };
 		3888F7B217C29C4C006A2B75 /* sss.png in Resources */ = {isa = PBXBuildFile; fileRef = 3888F7B017C29C4C006A2B75 /* sss.png */; };
 		3888F7CB17C29EFE006A2B75 /* BackGround.png in Resources */ = {isa = PBXBuildFile; fileRef = 3888F7B317C29EFE006A2B75 /* BackGround.png */; };
 		3888F7CD17C29EFE006A2B75 /* DengLuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3888F7B617C29EFE006A2B75 /* DengLuViewController.m */; };
 		3888F7CE17C29EFE006A2B75 /* DengLuViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3888F7B717C29EFE006A2B75 /* DengLuViewController.xib */; };
-		3888F7D117C29EFE006A2B75 /* IntroductionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3888F7BE17C29EFE006A2B75 /* IntroductionViewController.m */; };
-		3888F7D217C29EFE006A2B75 /* IntroductionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3888F7BF17C29EFE006A2B75 /* IntroductionViewController.xib */; };
 		3888F7D317C29EFE006A2B75 /* line.png in Resources */ = {isa = PBXBuildFile; fileRef = 3888F7C017C29EFE006A2B75 /* line.png */; };
 		3888F7D417C29EFE006A2B75 /* LOGO1.png in Resources */ = {isa = PBXBuildFile; fileRef = 3888F7C117C29EFE006A2B75 /* LOGO1.png */; };
 		3888F7D517C29EFE006A2B75 /* LOGO2.png in Resources */ = {isa = PBXBuildFile; fileRef = 3888F7C217C29EFE006A2B75 /* LOGO2.png */; };
@@ -43,18 +39,43 @@
 		3888F7EC17C2BBED006A2B75 /* LoginInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 3888F7EB17C2BBED006A2B75 /* LoginInfo.m */; };
 		3888F7F017C2C8F6006A2B75 /* SaveViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3888F7EE17C2C8F6006A2B75 /* SaveViewController.m */; };
 		3888F7F117C2C8F6006A2B75 /* SaveViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3888F7EF17C2C8F6006A2B75 /* SaveViewController.xib */; };
-		388997FA17C2F16D00E74B95 /* PassDao.m in Sources */ = {isa = PBXBuildFile; fileRef = 388997F917C2F16D00E74B95 /* PassDao.m */; };
 		388997FC17C2F28E00E74B95 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 388997FB17C2F28E00E74B95 /* libsqlite3.dylib */; };
 		38EB849E17C20E2D001E70B3 /* PassViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 38EB849C17C20E2D001E70B3 /* PassViewController.m */; };
 		38EB849F17C20E2D001E70B3 /* PassViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 38EB849D17C20E2D001E70B3 /* PassViewController.xib */; };
+		9F314FE01D6432EB003391A2 /* LKDBColumnDes.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F314FD91D6432EB003391A2 /* LKDBColumnDes.m */; };
+		9F314FE11D6432EB003391A2 /* LKDBModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F314FDB1D6432EB003391A2 /* LKDBModel.m */; };
+		9F314FE21D6432EB003391A2 /* LKDBSQLState.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F314FDD1D6432EB003391A2 /* LKDBSQLState.m */; };
+		9F314FE31D6432EB003391A2 /* LKDBTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F314FDF1D6432EB003391A2 /* LKDBTool.m */; };
+		9F314FF81D6459E8003391A2 /* LocalAuthentication.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F314FF71D6459E8003391A2 /* LocalAuthentication.framework */; };
+		9F9C63721D5BFFA000EBD581 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9F9C63711D5BFFA000EBD581 /* Images.xcassets */; };
+		9F9C638F1D5C110300EBD581 /* CameraSessionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F9C63761D5C110300EBD581 /* CameraSessionView.m */; };
+		9F9C63901D5C110300EBD581 /* CameraDismissButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F9C637A1D5C110300EBD581 /* CameraDismissButton.m */; };
+		9F9C63911D5C110300EBD581 /* CameraFlashButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F9C637C1D5C110300EBD581 /* CameraFlashButton.m */; };
+		9F9C63921D5C110300EBD581 /* CameraFocalReticule.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F9C637E1D5C110300EBD581 /* CameraFocalReticule.m */; };
+		9F9C63931D5C110300EBD581 /* CameraShutterButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F9C63801D5C110300EBD581 /* CameraShutterButton.m */; };
+		9F9C63941D5C110300EBD581 /* CameraToggleButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F9C63821D5C110300EBD581 /* CameraToggleButton.m */; };
+		9F9C63951D5C110300EBD581 /* LaunchCameraButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F9C63841D5C110300EBD581 /* LaunchCameraButton.m */; };
+		9F9C63961D5C110300EBD581 /* Cool Camera Mockup.sketch in Resources */ = {isa = PBXBuildFile; fileRef = 9F9C63851D5C110300EBD581 /* Cool Camera Mockup.sketch */; };
+		9F9C63971D5C110300EBD581 /* PaintCodeFile.pcvd in Resources */ = {isa = PBXBuildFile; fileRef = 9F9C63861D5C110300EBD581 /* PaintCodeFile.pcvd */; };
+		9F9C63981D5C110300EBD581 /* CameraStyleKitClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F9C63891D5C110300EBD581 /* CameraStyleKitClass.m */; };
+		9F9C63991D5C110300EBD581 /* CaptureSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F9C638C1D5C110300EBD581 /* CaptureSessionManager.m */; };
+		9F9C639A1D5C110300EBD581 /* Constants.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F9C638E1D5C110300EBD581 /* Constants.m */; };
+		9F9C639C1D5C117A00EBD581 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F9C639B1D5C117A00EBD581 /* AVFoundation.framework */; };
+		9F9C639E1D5C118C00EBD581 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F9C639D1D5C118C00EBD581 /* QuartzCore.framework */; };
+		9F9C63A01D5C119600EBD581 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F9C639F1D5C119600EBD581 /* CoreVideo.framework */; };
+		9F9C63A21D5C119F00EBD581 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F9C63A11D5C119F00EBD581 /* CoreMedia.framework */; };
+		9F9C63A41D5C11A700EBD581 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F9C63A31D5C11A700EBD581 /* ImageIO.framework */; };
+		9F9C63A71D5C153100EBD581 /* saveImageController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F9C63A61D5C153100EBD581 /* saveImageController.m */; };
+		C38F464E0BDF05360765327E /* libPods-PassMake.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C9B27C4ADDF58052F0EC3198 /* libPods-PassMake.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0FCDF7F53AA0BA8420554794 /* Pods-PassMake.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PassMake.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PassMake/Pods-PassMake.debug.xcconfig"; sourceTree = "<group>"; };
 		3823ACF117C2323A007F6D92 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Default.png; path = ../Default.png; sourceTree = "<group>"; };
 		3823ACF317C2337D007F6D92 /* aaa.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = aaa.png; path = ../aaa.png; sourceTree = "<group>"; };
-		3823ACF517C23B67007F6D92 /* DeleteViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DeleteViewController.h; path = PassMake/DeleteViewController.h; sourceTree = "<group>"; };
-		3823ACF617C23B67007F6D92 /* DeleteViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DeleteViewController.m; path = PassMake/DeleteViewController.m; sourceTree = "<group>"; };
-		3823ACF717C23B67007F6D92 /* DeleteViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = DeleteViewController.xib; path = PassMake/DeleteViewController.xib; sourceTree = "<group>"; };
+		3823ACF517C23B67007F6D92 /* DeleteViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeleteViewController.h; sourceTree = "<group>"; };
+		3823ACF617C23B67007F6D92 /* DeleteViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DeleteViewController.m; sourceTree = "<group>"; };
+		3823ACF717C23B67007F6D92 /* DeleteViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DeleteViewController.xib; sourceTree = "<group>"; };
 		3888F77617C29ACE006A2B75 /* PassMake.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PassMake.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3888F77917C29ACE006A2B75 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		3888F77B17C29ACE006A2B75 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -67,18 +88,12 @@
 		3888F78917C29ACE006A2B75 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		3888F78D17C29ACE006A2B75 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		3888F78F17C29ACE006A2B75 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
-		3888F79117C29ACE006A2B75 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		3888F79217C29ACE006A2B75 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		3888F79517C29ACE006A2B75 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
 		3888F7AD17C29C1A006A2B75 /* TUBIAO副本.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "TUBIAO副本.png"; sourceTree = "<group>"; };
 		3888F7B017C29C4C006A2B75 /* sss.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = sss.png; path = ../sss.png; sourceTree = "<group>"; };
 		3888F7B317C29EFE006A2B75 /* BackGround.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BackGround.png; sourceTree = "<group>"; };
 		3888F7B517C29EFE006A2B75 /* DengLuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DengLuViewController.h; sourceTree = "<group>"; };
 		3888F7B617C29EFE006A2B75 /* DengLuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DengLuViewController.m; sourceTree = "<group>"; };
 		3888F7B717C29EFE006A2B75 /* DengLuViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DengLuViewController.xib; sourceTree = "<group>"; };
-		3888F7BD17C29EFE006A2B75 /* IntroductionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IntroductionViewController.h; sourceTree = "<group>"; };
-		3888F7BE17C29EFE006A2B75 /* IntroductionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IntroductionViewController.m; sourceTree = "<group>"; };
-		3888F7BF17C29EFE006A2B75 /* IntroductionViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = IntroductionViewController.xib; sourceTree = "<group>"; };
 		3888F7C017C29EFE006A2B75 /* line.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = line.png; sourceTree = "<group>"; };
 		3888F7C117C29EFE006A2B75 /* LOGO1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LOGO1.png; sourceTree = "<group>"; };
 		3888F7C217C29EFE006A2B75 /* LOGO2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LOGO2.png; sourceTree = "<group>"; };
@@ -101,12 +116,51 @@
 		3888F7ED17C2C8F6006A2B75 /* SaveViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SaveViewController.h; sourceTree = "<group>"; };
 		3888F7EE17C2C8F6006A2B75 /* SaveViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SaveViewController.m; sourceTree = "<group>"; };
 		3888F7EF17C2C8F6006A2B75 /* SaveViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SaveViewController.xib; sourceTree = "<group>"; };
-		388997F817C2F16D00E74B95 /* PassDao.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PassDao.h; sourceTree = "<group>"; };
-		388997F917C2F16D00E74B95 /* PassDao.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PassDao.m; sourceTree = "<group>"; };
 		388997FB17C2F28E00E74B95 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
 		38EB849B17C20E2D001E70B3 /* PassViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PassViewController.h; path = ../PassViewController.h; sourceTree = "<group>"; };
 		38EB849C17C20E2D001E70B3 /* PassViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PassViewController.m; path = ../PassViewController.m; sourceTree = "<group>"; };
 		38EB849D17C20E2D001E70B3 /* PassViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = PassViewController.xib; path = ../PassViewController.xib; sourceTree = "<group>"; };
+		9F314FD81D6432EB003391A2 /* LKDBColumnDes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LKDBColumnDes.h; sourceTree = "<group>"; };
+		9F314FD91D6432EB003391A2 /* LKDBColumnDes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LKDBColumnDes.m; sourceTree = "<group>"; };
+		9F314FDA1D6432EB003391A2 /* LKDBModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LKDBModel.h; sourceTree = "<group>"; };
+		9F314FDB1D6432EB003391A2 /* LKDBModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LKDBModel.m; sourceTree = "<group>"; };
+		9F314FDC1D6432EB003391A2 /* LKDBSQLState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LKDBSQLState.h; sourceTree = "<group>"; };
+		9F314FDD1D6432EB003391A2 /* LKDBSQLState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LKDBSQLState.m; sourceTree = "<group>"; };
+		9F314FDE1D6432EB003391A2 /* LKDBTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LKDBTool.h; sourceTree = "<group>"; };
+		9F314FDF1D6432EB003391A2 /* LKDBTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LKDBTool.m; sourceTree = "<group>"; };
+		9F314FF71D6459E8003391A2 /* LocalAuthentication.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = LocalAuthentication.framework; path = System/Library/Frameworks/LocalAuthentication.framework; sourceTree = SDKROOT; };
+		9F9C63711D5BFFA000EBD581 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		9F9C63751D5C110300EBD581 /* CameraSessionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CameraSessionView.h; sourceTree = "<group>"; };
+		9F9C63761D5C110300EBD581 /* CameraSessionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CameraSessionView.m; sourceTree = "<group>"; };
+		9F9C63791D5C110300EBD581 /* CameraDismissButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CameraDismissButton.h; sourceTree = "<group>"; };
+		9F9C637A1D5C110300EBD581 /* CameraDismissButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CameraDismissButton.m; sourceTree = "<group>"; };
+		9F9C637B1D5C110300EBD581 /* CameraFlashButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CameraFlashButton.h; sourceTree = "<group>"; };
+		9F9C637C1D5C110300EBD581 /* CameraFlashButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CameraFlashButton.m; sourceTree = "<group>"; };
+		9F9C637D1D5C110300EBD581 /* CameraFocalReticule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CameraFocalReticule.h; sourceTree = "<group>"; };
+		9F9C637E1D5C110300EBD581 /* CameraFocalReticule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CameraFocalReticule.m; sourceTree = "<group>"; };
+		9F9C637F1D5C110300EBD581 /* CameraShutterButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CameraShutterButton.h; sourceTree = "<group>"; };
+		9F9C63801D5C110300EBD581 /* CameraShutterButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CameraShutterButton.m; sourceTree = "<group>"; };
+		9F9C63811D5C110300EBD581 /* CameraToggleButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CameraToggleButton.h; sourceTree = "<group>"; };
+		9F9C63821D5C110300EBD581 /* CameraToggleButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CameraToggleButton.m; sourceTree = "<group>"; };
+		9F9C63831D5C110300EBD581 /* LaunchCameraButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LaunchCameraButton.h; sourceTree = "<group>"; };
+		9F9C63841D5C110300EBD581 /* LaunchCameraButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LaunchCameraButton.m; sourceTree = "<group>"; };
+		9F9C63851D5C110300EBD581 /* Cool Camera Mockup.sketch */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Cool Camera Mockup.sketch"; sourceTree = "<group>"; };
+		9F9C63861D5C110300EBD581 /* PaintCodeFile.pcvd */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = PaintCodeFile.pcvd; sourceTree = "<group>"; };
+		9F9C63881D5C110300EBD581 /* CameraStyleKitClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CameraStyleKitClass.h; sourceTree = "<group>"; };
+		9F9C63891D5C110300EBD581 /* CameraStyleKitClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CameraStyleKitClass.m; sourceTree = "<group>"; };
+		9F9C638B1D5C110300EBD581 /* CaptureSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CaptureSessionManager.h; sourceTree = "<group>"; };
+		9F9C638C1D5C110300EBD581 /* CaptureSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CaptureSessionManager.m; sourceTree = "<group>"; };
+		9F9C638D1D5C110300EBD581 /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
+		9F9C638E1D5C110300EBD581 /* Constants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Constants.m; sourceTree = "<group>"; };
+		9F9C639B1D5C117A00EBD581 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		9F9C639D1D5C118C00EBD581 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		9F9C639F1D5C119600EBD581 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
+		9F9C63A11D5C119F00EBD581 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		9F9C63A31D5C11A700EBD581 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
+		9F9C63A51D5C153100EBD581 /* saveImageController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = saveImageController.h; sourceTree = "<group>"; };
+		9F9C63A61D5C153100EBD581 /* saveImageController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = saveImageController.m; sourceTree = "<group>"; };
+		A2B14D9E07EDD612011801AD /* Pods-PassMake.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PassMake.release.xcconfig"; path = "Pods/Target Support Files/Pods-PassMake/Pods-PassMake.release.xcconfig"; sourceTree = "<group>"; };
+		C9B27C4ADDF58052F0EC3198 /* libPods-PassMake.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PassMake.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,10 +168,17 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				388997FC17C2F28E00E74B95 /* libsqlite3.dylib in Frameworks */,
-				3888F77A17C29ACE006A2B75 /* UIKit.framework in Frameworks */,
+				9F314FF81D6459E8003391A2 /* LocalAuthentication.framework in Frameworks */,
 				3888F77C17C29ACE006A2B75 /* Foundation.framework in Frameworks */,
+				3888F77A17C29ACE006A2B75 /* UIKit.framework in Frameworks */,
 				3888F77E17C29ACE006A2B75 /* CoreGraphics.framework in Frameworks */,
+				9F9C63A41D5C11A700EBD581 /* ImageIO.framework in Frameworks */,
+				9F9C63A21D5C119F00EBD581 /* CoreMedia.framework in Frameworks */,
+				9F9C63A01D5C119600EBD581 /* CoreVideo.framework in Frameworks */,
+				9F9C639E1D5C118C00EBD581 /* QuartzCore.framework in Frameworks */,
+				9F9C639C1D5C117A00EBD581 /* AVFoundation.framework in Frameworks */,
+				388997FC17C2F28E00E74B95 /* libsqlite3.dylib in Frameworks */,
+				C38F464E0BDF05360765327E /* libPods-PassMake.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -144,14 +205,10 @@
 		3888F76D17C29ACE006A2B75 = {
 			isa = PBXGroup;
 			children = (
-				388997F817C2F16D00E74B95 /* PassDao.h */,
-				388997F917C2F16D00E74B95 /* PassDao.m */,
-				3823ACF517C23B67007F6D92 /* DeleteViewController.h */,
-				3823ACF617C23B67007F6D92 /* DeleteViewController.m */,
-				3823ACF717C23B67007F6D92 /* DeleteViewController.xib */,
 				3888F77F17C29ACE006A2B75 /* PassMake */,
 				3888F77817C29ACE006A2B75 /* Frameworks */,
 				3888F77717C29ACE006A2B75 /* Products */,
+				BD0417D8F49F835400D0536D /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -166,10 +223,17 @@
 		3888F77817C29ACE006A2B75 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				9F314FF71D6459E8003391A2 /* LocalAuthentication.framework */,
+				9F9C63A31D5C11A700EBD581 /* ImageIO.framework */,
+				9F9C63A11D5C119F00EBD581 /* CoreMedia.framework */,
+				9F9C639F1D5C119600EBD581 /* CoreVideo.framework */,
+				9F9C639D1D5C118C00EBD581 /* QuartzCore.framework */,
+				9F9C639B1D5C117A00EBD581 /* AVFoundation.framework */,
 				388997FB17C2F28E00E74B95 /* libsqlite3.dylib */,
 				3888F77917C29ACE006A2B75 /* UIKit.framework */,
 				3888F77B17C29ACE006A2B75 /* Foundation.framework */,
 				3888F77D17C29ACE006A2B75 /* CoreGraphics.framework */,
+				C9B27C4ADDF58052F0EC3198 /* libPods-PassMake.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -177,7 +241,8 @@
 		3888F77F17C29ACE006A2B75 /* PassMake */ = {
 			isa = PBXGroup;
 			children = (
-				3823ACFA17C243CC007F6D92 /* images */,
+				9F314FD71D6432EB003391A2 /* LKFMDB(封装FMDB) */,
+				9F9C63731D5C110300EBD581 /* CustomizableCamera */,
 				38EB849B17C20E2D001E70B3 /* PassViewController.h */,
 				38EB849C17C20E2D001E70B3 /* PassViewController.m */,
 				38EB849D17C20E2D001E70B3 /* PassViewController.xib */,
@@ -195,9 +260,6 @@
 				3888F7B517C29EFE006A2B75 /* DengLuViewController.h */,
 				3888F7B617C29EFE006A2B75 /* DengLuViewController.m */,
 				3888F7B717C29EFE006A2B75 /* DengLuViewController.xib */,
-				3888F7BD17C29EFE006A2B75 /* IntroductionViewController.h */,
-				3888F7BE17C29EFE006A2B75 /* IntroductionViewController.m */,
-				3888F7BF17C29EFE006A2B75 /* IntroductionViewController.xib */,
 				3888F7C417C29EFE006A2B75 /* MakePassViewController.h */,
 				3888F7C517C29EFE006A2B75 /* MakePassViewController.m */,
 				3888F7C617C29EFE006A2B75 /* MakePassViewController.xib */,
@@ -206,9 +268,11 @@
 				3888F7C917C29EFE006A2B75 /* ReViewController.xib */,
 				3888F78817C29ACE006A2B75 /* AppDelegate.h */,
 				3888F78917C29ACE006A2B75 /* AppDelegate.m */,
-				3888F79117C29ACE006A2B75 /* ViewController.h */,
-				3888F79217C29ACE006A2B75 /* ViewController.m */,
-				3888F79417C29ACE006A2B75 /* ViewController.xib */,
+				3823ACF517C23B67007F6D92 /* DeleteViewController.h */,
+				3823ACF617C23B67007F6D92 /* DeleteViewController.m */,
+				3823ACF717C23B67007F6D92 /* DeleteViewController.xib */,
+				9F9C63A51D5C153100EBD581 /* saveImageController.h */,
+				9F9C63A61D5C153100EBD581 /* saveImageController.m */,
 				3888F78017C29ACE006A2B75 /* Supporting Files */,
 			);
 			path = PassMake;
@@ -217,6 +281,8 @@
 		3888F78017C29ACE006A2B75 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				3823ACFA17C243CC007F6D92 /* images */,
+				9F9C63711D5BFFA000EBD581 /* Images.xcassets */,
 				3888F78117C29ACE006A2B75 /* PassMake-Info.plist */,
 				3888F78217C29ACE006A2B75 /* InfoPlist.strings */,
 				3888F78517C29ACE006A2B75 /* main.m */,
@@ -227,6 +293,100 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		9F314FD71D6432EB003391A2 /* LKFMDB(封装FMDB) */ = {
+			isa = PBXGroup;
+			children = (
+				9F314FD81D6432EB003391A2 /* LKDBColumnDes.h */,
+				9F314FD91D6432EB003391A2 /* LKDBColumnDes.m */,
+				9F314FDA1D6432EB003391A2 /* LKDBModel.h */,
+				9F314FDB1D6432EB003391A2 /* LKDBModel.m */,
+				9F314FDC1D6432EB003391A2 /* LKDBSQLState.h */,
+				9F314FDD1D6432EB003391A2 /* LKDBSQLState.m */,
+				9F314FDE1D6432EB003391A2 /* LKDBTool.h */,
+				9F314FDF1D6432EB003391A2 /* LKDBTool.m */,
+			);
+			name = "LKFMDB(封装FMDB)";
+			path = LKFMDB;
+			sourceTree = "<group>";
+		};
+		9F9C63731D5C110300EBD581 /* CustomizableCamera */ = {
+			isa = PBXGroup;
+			children = (
+				9F9C63741D5C110300EBD581 /* Camera View */,
+				9F9C63771D5C110300EBD581 /* Graphical Assets */,
+				9F9C638A1D5C110300EBD581 /* Model Classes */,
+			);
+			path = CustomizableCamera;
+			sourceTree = "<group>";
+		};
+		9F9C63741D5C110300EBD581 /* Camera View */ = {
+			isa = PBXGroup;
+			children = (
+				9F9C63751D5C110300EBD581 /* CameraSessionView.h */,
+				9F9C63761D5C110300EBD581 /* CameraSessionView.m */,
+			);
+			path = "Camera View";
+			sourceTree = "<group>";
+		};
+		9F9C63771D5C110300EBD581 /* Graphical Assets */ = {
+			isa = PBXGroup;
+			children = (
+				9F9C63781D5C110300EBD581 /* CameraViewComponents */,
+				9F9C63851D5C110300EBD581 /* Cool Camera Mockup.sketch */,
+				9F9C63861D5C110300EBD581 /* PaintCodeFile.pcvd */,
+				9F9C63871D5C110300EBD581 /* UI Assets */,
+			);
+			path = "Graphical Assets";
+			sourceTree = "<group>";
+		};
+		9F9C63781D5C110300EBD581 /* CameraViewComponents */ = {
+			isa = PBXGroup;
+			children = (
+				9F9C63791D5C110300EBD581 /* CameraDismissButton.h */,
+				9F9C637A1D5C110300EBD581 /* CameraDismissButton.m */,
+				9F9C637B1D5C110300EBD581 /* CameraFlashButton.h */,
+				9F9C637C1D5C110300EBD581 /* CameraFlashButton.m */,
+				9F9C637D1D5C110300EBD581 /* CameraFocalReticule.h */,
+				9F9C637E1D5C110300EBD581 /* CameraFocalReticule.m */,
+				9F9C637F1D5C110300EBD581 /* CameraShutterButton.h */,
+				9F9C63801D5C110300EBD581 /* CameraShutterButton.m */,
+				9F9C63811D5C110300EBD581 /* CameraToggleButton.h */,
+				9F9C63821D5C110300EBD581 /* CameraToggleButton.m */,
+				9F9C63831D5C110300EBD581 /* LaunchCameraButton.h */,
+				9F9C63841D5C110300EBD581 /* LaunchCameraButton.m */,
+			);
+			path = CameraViewComponents;
+			sourceTree = "<group>";
+		};
+		9F9C63871D5C110300EBD581 /* UI Assets */ = {
+			isa = PBXGroup;
+			children = (
+				9F9C63881D5C110300EBD581 /* CameraStyleKitClass.h */,
+				9F9C63891D5C110300EBD581 /* CameraStyleKitClass.m */,
+			);
+			path = "UI Assets";
+			sourceTree = "<group>";
+		};
+		9F9C638A1D5C110300EBD581 /* Model Classes */ = {
+			isa = PBXGroup;
+			children = (
+				9F9C638B1D5C110300EBD581 /* CaptureSessionManager.h */,
+				9F9C638C1D5C110300EBD581 /* CaptureSessionManager.m */,
+				9F9C638D1D5C110300EBD581 /* Constants.h */,
+				9F9C638E1D5C110300EBD581 /* Constants.m */,
+			);
+			path = "Model Classes";
+			sourceTree = "<group>";
+		};
+		BD0417D8F49F835400D0536D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0FCDF7F53AA0BA8420554794 /* Pods-PassMake.debug.xcconfig */,
+				A2B14D9E07EDD612011801AD /* Pods-PassMake.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -234,9 +394,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3888F79917C29ACE006A2B75 /* Build configuration list for PBXNativeTarget "PassMake" */;
 			buildPhases = (
+				F4E4F1E56DFB65256819BECB /* [CP] Check Pods Manifest.lock */,
 				3888F77217C29ACE006A2B75 /* Sources */,
 				3888F77317C29ACE006A2B75 /* Frameworks */,
 				3888F77417C29ACE006A2B75 /* Resources */,
+				E8CDD7984B380B20C30FCB12 /* [CP] Embed Pods Frameworks */,
+				8B5578CEB9CCD23F16B3E17B /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -255,6 +418,11 @@
 			attributes = {
 				LastUpgradeCheck = 0460;
 				ORGANIZATIONNAME = "普科";
+				TargetAttributes = {
+					3888F77517C29ACE006A2B75 = {
+						DevelopmentTeam = T45A9W8G69;
+					};
+				};
 			};
 			buildConfigurationList = 3888F77117C29ACE006A2B75 /* Build configuration list for PBXProject "PassMake" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -281,49 +449,110 @@
 				3888F78417C29ACE006A2B75 /* InfoPlist.strings in Resources */,
 				3888F78E17C29ACE006A2B75 /* Default@2x.png in Resources */,
 				3888F79017C29ACE006A2B75 /* Default-568h@2x.png in Resources */,
-				3888F79617C29ACE006A2B75 /* ViewController.xib in Resources */,
 				3888F7AE17C29C1A006A2B75 /* TUBIAO副本.png in Resources */,
 				3888F7B217C29C4C006A2B75 /* sss.png in Resources */,
 				3888F7CB17C29EFE006A2B75 /* BackGround.png in Resources */,
 				3888F7CE17C29EFE006A2B75 /* DengLuViewController.xib in Resources */,
-				3888F7D217C29EFE006A2B75 /* IntroductionViewController.xib in Resources */,
 				3888F7D317C29EFE006A2B75 /* line.png in Resources */,
 				3888F7D417C29EFE006A2B75 /* LOGO1.png in Resources */,
 				3888F7D517C29EFE006A2B75 /* LOGO2.png in Resources */,
 				3888F7D617C29EFE006A2B75 /* LOGO3.png in Resources */,
 				3888F7D817C29EFE006A2B75 /* MakePassViewController.xib in Resources */,
 				3888F7DA17C29EFE006A2B75 /* ReViewController.xib in Resources */,
+				9F9C63721D5BFFA000EBD581 /* Images.xcassets in Resources */,
 				3888F7DB17C29EFE006A2B75 /* sss.png in Resources */,
 				3888F7F117C2C8F6006A2B75 /* SaveViewController.xib in Resources */,
 				38EB849F17C20E2D001E70B3 /* PassViewController.xib in Resources */,
 				3823ACF217C2323A007F6D92 /* Default.png in Resources */,
 				3823ACF417C2337D007F6D92 /* aaa.png in Resources */,
+				9F9C63961D5C110300EBD581 /* Cool Camera Mockup.sketch in Resources */,
 				3823ACF917C23B67007F6D92 /* DeleteViewController.xib in Resources */,
+				9F9C63971D5C110300EBD581 /* PaintCodeFile.pcvd in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		8B5578CEB9CCD23F16B3E17B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PassMake/Pods-PassMake-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E8CDD7984B380B20C30FCB12 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PassMake/Pods-PassMake-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F4E4F1E56DFB65256819BECB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		3888F77217C29ACE006A2B75 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9F314FE31D6432EB003391A2 /* LKDBTool.m in Sources */,
+				9F9C63951D5C110300EBD581 /* LaunchCameraButton.m in Sources */,
 				3888F78617C29ACE006A2B75 /* main.m in Sources */,
+				9F9C63921D5C110300EBD581 /* CameraFocalReticule.m in Sources */,
+				9F9C63901D5C110300EBD581 /* CameraDismissButton.m in Sources */,
+				9F9C63931D5C110300EBD581 /* CameraShutterButton.m in Sources */,
 				3888F78A17C29ACE006A2B75 /* AppDelegate.m in Sources */,
-				3888F79317C29ACE006A2B75 /* ViewController.m in Sources */,
+				9F9C63911D5C110300EBD581 /* CameraFlashButton.m in Sources */,
+				9F314FE01D6432EB003391A2 /* LKDBColumnDes.m in Sources */,
 				3888F7CD17C29EFE006A2B75 /* DengLuViewController.m in Sources */,
-				3888F7D117C29EFE006A2B75 /* IntroductionViewController.m in Sources */,
 				3888F7D717C29EFE006A2B75 /* MakePassViewController.m in Sources */,
+				9F9C63981D5C110300EBD581 /* CameraStyleKitClass.m in Sources */,
+				9F314FE21D6432EB003391A2 /* LKDBSQLState.m in Sources */,
+				9F9C639A1D5C110300EBD581 /* Constants.m in Sources */,
 				3888F7D917C29EFE006A2B75 /* ReViewController.m in Sources */,
+				9F9C638F1D5C110300EBD581 /* CameraSessionView.m in Sources */,
+				9F314FE11D6432EB003391A2 /* LKDBModel.m in Sources */,
 				3888F7E417C2A08F006A2B75 /* MyPass.m in Sources */,
+				9F9C63A71D5C153100EBD581 /* saveImageController.m in Sources */,
+				9F9C63991D5C110300EBD581 /* CaptureSessionManager.m in Sources */,
 				3888F7E617C2A08F006A2B75 /* PassInfo.m in Sources */,
 				3888F7E717C2A08F006A2B75 /* UserInfo.m in Sources */,
+				9F9C63941D5C110300EBD581 /* CameraToggleButton.m in Sources */,
 				3888F7EC17C2BBED006A2B75 /* LoginInfo.m in Sources */,
 				3888F7F017C2C8F6006A2B75 /* SaveViewController.m in Sources */,
 				38EB849E17C20E2D001E70B3 /* PassViewController.m in Sources */,
 				3823ACF817C23B67007F6D92 /* DeleteViewController.m in Sources */,
-				388997FA17C2F16D00E74B95 /* PassDao.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -336,14 +565,6 @@
 				3888F78317C29ACE006A2B75 /* en */,
 			);
 			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		3888F79417C29ACE006A2B75 /* ViewController.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				3888F79517C29ACE006A2B75 /* en */,
-			);
-			name = ViewController.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -405,26 +626,40 @@
 		};
 		3888F79A17C29ACE006A2B75 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0FCDF7F53AA0BA8420554794 /* Pods-PassMake.debug.xcconfig */;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "PassMake/PassMake-Prefix.pch";
 				INFOPLIST_FILE = "PassMake/PassMake-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				New_Setting = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
 		};
 		3888F79B17C29ACE006A2B75 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A2B14D9E07EDD612011801AD /* Pods-PassMake.release.xcconfig */;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "PassMake/PassMake-Prefix.pch";
 				INFOPLIST_FILE = "PassMake/PassMake-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				New_Setting = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

@@ -9,7 +9,7 @@
 #import "SaveViewController.h"
 #import "AppDelegate.h"
 #import "LoginInfo.h"
-#import "PassDao.h"
+#import "PassInfo.h"
 
 @interface SaveViewController ()
 
@@ -42,21 +42,23 @@ NSString *hehe;
         PassInfo *info = [[PassInfo alloc] init];
         info.title = self.passname.text;
         info.pass = self.mima.text;
-        BOOL hehe = [[PassDao shared] addPass:info];
-        if (hehe) {
-            [[[UIAlertView alloc] initWithTitle:@"" message:@"添加成功" delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil, nil] show];
-        }else
-        {
-            [[[UIAlertView alloc] initWithTitle:@"" message:@"添加失败" delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil, nil] show];
-        }
+      
+        dispatch_async(dispatch_get_global_queue(0,0), ^{
+            BOOL hehe = [info save];
+//            if (hehe) {
+////                [[[UIAlertView alloc] initWithTitle:@"" message:@"添加成功" delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil, nil] show];
+//            }else
+//            {
+//                [[[UIAlertView alloc] initWithTitle:@"" message:@"添加失败" delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil, nil] show];
+//            }
+        });
         [self backMake:nil];
     }
 }
 
 -(void)backMake:(id)sender
 {
-    AppDelegate *now = [UIApplication sharedApplication].delegate;
-    now.window.rootViewController = (UIViewController *)now.makePassViewController;
+    [self.navigationController popViewControllerAnimated:YES];
 }
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
