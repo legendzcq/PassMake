@@ -1,0 +1,29 @@
+PODS:
+  - FMDB (2.6.2):
+    - FMDB/standard (= 2.6.2)
+  - FMDB/SQLCipher (2.6.2):
+    - SQLCipher
+  - FMDB/standard (2.6.2)
+  - Masonry (1.0.1)
+  - SQLCipher (3.4.0):
+    - SQLCipher/standard (= 3.4.0)
+  - SQLCipher/common (3.4.0)
+  - SQLCipher/standard (3.4.0):
+    - SQLCipher/common
+  - XLForm (3.2.0)
+
+DEPENDENCIES:
+  - FMDB
+  - FMDB/SQLCipher
+  - Masonry
+  - XLForm (~> 3.0)
+
+SPEC CHECKSUMS:
+  FMDB: 854a0341b4726e53276f2a8996f06f1b80f9259a
+  Masonry: a1a931a0d08870ed8ae415a2ea5ea68ebcac77df
+  SQLCipher: 4c768761421736a247ed6cf412d9045615d53dff
+  XLForm: 2250b4e96ab8ffa5f3355838c79edd90de451782
+
+PODFILE CHECKSUM: 8d52e2291c761bf261d323ded23c1b150fea9d6f
+
+COCOAPODS: 1.0.1
